@@ -55,25 +55,41 @@
             font-size: 300%;
         }
 
+        #footer{
+            background-color: #b0d1fb;
+            padding-top: 70px;
+            width: 100%;
+        }
+
+        .marginBottom{
+            margin-bottom: 30px;
+        }
+
+        .appstoreimage{
+            width: 250px;
+        }
+
     </style>
-
 </head>
-
 <body>
+
+<!-- Navigation bar -->
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
+
+            <!-- Logo -->
             <a href="" class="navbar-brand">Alice Wonderweb</a>
 
-            <button type="button" class="navbar-toggle" datatoggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+            <!-- Little menu icon -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-
         </div>
+
+        <!-- Navigation links -->
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#home">Home</a></li>
@@ -81,6 +97,7 @@
                 <li><a href="#download">Download</a></li>
             </ul>
 
+            <!-- Login form inside navigation bar-->
             <form class="navbar-form navbar-right">
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="E-mail"/>
@@ -98,7 +115,7 @@
     </div>
 </div>
 
-
+<!-- Main section of a webpage -->
 <div class="container contentContainer" id="topContainer">
     <div class="row">
         <div class="col-md-6 col-md-offset-3" id="topRow">
@@ -108,26 +125,23 @@
             <p>A little bit more information about the app... You can go a little bit more into detail here.</p>
             <p class="bold marginTop">Interested? Join our mailing list!</p>
 
+            <!-- Main subscribe input form -->
             <form class="marginTop">
                 <div class="input-group">
                     <span class="input-group-addon">@</span>
                     <input type="email" class="form-control" placeholder="Your E-mail address">
                 </div>
-
                 <input type="submit" class="btn btn-success btn-lg marginTop">
-
             </form>
 
-            <button class="btn btn-success marginTop" data-toggle="modal" data-target="#myModal">
-                Launch Modal
-            </button>
+            <!-- Modal module -->
+            <button class="btn btn-success marginTop" data-toggle="modal" data-target="#myModal">Launch Modal</button>
 
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button class="close" data-dismiss="modal">close</button>
-
                             <h4 class="modal-title">My Modal!</h4>
                         </div>
 
@@ -141,21 +155,18 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 </div>
 
+<!-- Second section of a webpage -->
 <div class="container contentContainer">
     <div class="row center">
         <h1 class="center title">Why This App Is Awesome</h1>
-
         <p class="lead">Summary of the app's awesomeness</p>
-
     </div>
 
-    <div class="row">
+    <div class="row marginBottom">
         <div class="col-md-4 marginTop">
             <h2><span class="glyphicon glyphicon-music"></span> Music</h2>
             <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
@@ -176,11 +187,16 @@
 
             <button class="btn btn-success marginTop">Sign Up!</button>
         </div>
-
-
     </div>
+</div>
 
-
+<!-- Third section of a webpage -->
+<div class="container contentContainer" id="footer">
+    <div class="row">
+        <h1 class="center title">Download The App!</h1>
+        <p class="lead center">Really, why should I download this app?</p>
+        <p class="center"><img src="appstore.png" class="appstoreimage"></p>
+    </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
