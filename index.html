@@ -45,6 +45,16 @@
         .marginTop{
             margin-top: 20px;
         }
+
+        .center{
+            text-align: center;
+        }
+
+        .title{
+            margin-top: 100px;
+            font-size: 300%;
+        }
+
     </style>
 
 </head>
@@ -89,7 +99,7 @@
 </div>
 
 
-<div class="container-fluid" id="topContainer">
+<div class="container contentContainer" id="topContainer">
     <div class="row">
         <div class="col-md-6 col-md-offset-3" id="topRow">
             <h1>Welcome to my Wonder Page!</h1>
@@ -137,13 +147,49 @@
 
 </div>
 
+<div class="container contentContainer">
+    <div class="row center">
+        <h1 class="center title">Why This App Is Awesome</h1>
+
+        <p class="lead">Summary of the app's awesomeness</p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-music"></span> Music</h2>
+            <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+        <button class="btn btn-success marginTop">Sign Up!</button>
+        </div>
+
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-off"></span> Off</h2>
+            <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+            <button class="btn btn-success marginTop">Sign Up!</button>
+        </div>
+
+        <div class="col-md-4 marginTop">
+            <h2><span class="glyphicon glyphicon-pencil"></span> Pencil</h2>
+            <p>A brief description of one of the best features of your app. Maybe a little more text. A brief description of one of the best features of your app. Maybe a little more text.</p>
+
+            <button class="btn btn-success marginTop">Sign Up!</button>
+        </div>
+
+
+    </div>
+
+
+</div>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
 <script>
-    $("#topContainer").css("height", $(window).height());
+    $(".contentContainer").css("min-height", $(window).height());
 </script>
 </body>
 </html>
